@@ -1,0 +1,359 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  background: linear-gradient(113.49deg, #984d38 -30.3%, #181e41 58.12%)
+    no-repeat;
+  color: #fff;
+}
+
+.header {
+  max-width: 1197px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 15px 104px 15px;
+}
+
+.header__logo {
+  display: block;
+  width: 129px;
+  height: 25px;
+  background-image: url(img/logo.svg);
+  background-repeat: no-repeat;
+}
+
+.header__list {
+  display: flex;
+  list-style-type: none;
+  gap: 40px;
+  font-size: 20px;
+}
+
+.header__link {
+  color: white;
+  text-decoration: none;
+}
+
+.header__link__gradient {
+  background: linear-gradient(214.02deg, #b75cff 6.04%, #671ae4 92.95%);
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+
+.form {
+  position: relative;
+}
+
+.form__button {
+  display: block;
+  background-image: url(img/search.svg);
+  width: 20px;
+  height: 20px;
+  background-repeat: none;
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  top: calc(50% - 10px);
+  left: 10px;
+}
+
+.form__input {
+  width: 384px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  border: none;
+  padding: 13px 40px;
+  color: white;
+  font-size: 20px;
+}
+
+.form__input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.form__input:focus {
+  outline: none;
+}
+
+.container {
+  max-width: 1197px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main__title {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.main__desc {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.5);
+  margin-top: 0;
+  margin-bottom: 42px;
+}
+
+.main__img {
+  width: 100%;
+}
+
+.main__text {
+  flex-basis: 490px;
+}
+
+.main__imag {
+  flex-basis: calc(100% - 490px - 116px);
+}
+
+.main__btn {
+  font-size: 20px;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 11px 20px;
+}
+
+.main__btn__gradient {
+  background: linear-gradient(214.02deg, #b75cff 6.04%, #671ae4 92.95%);
+  margin-right: 17px;
+}
+
+.main__list {
+  display: flex;
+  list-style-type: none;
+  padding-left: 0;
+  text-align: center;
+  gap: 110px;
+  margin-top: 60px;
+  margin-bottom: 24px;
+}
+
+.main__item {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 20px;
+}
+
+.main__span {
+  display: block;
+  color: #fff;
+  font-weight: 700;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.company {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 150px;
+  margin-bottom: 144px;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 60px;
+  text-align: center;
+  line-height: 1.8;
+  max-width: 390px;
+  margin: 0 auto 4px;
+}
+
+.desc {
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 500;
+  text-align: center;
+  margin: auto;
+  max-width: 420px;
+  line-height: 1.5;
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.card-item {
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  padding: 26px;
+  flex-basis: 32.5%; /*позволяет разместить картинку по центру*/
+  box-sizing: border-box;
+  transition: 1s;
+}
+
+.card-item:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.card__cover {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 380px;
+}
+
+.card-img {
+  width: 100%;
+  height: 380px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+}
+
+.card__info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 24px;
+}
+
+.card__nick {
+  font-size: 20px;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.card__author {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  color: #ffffff;
+  margin-top: 16px;
+  margin-bottom: 0;
+}
+
+.card__bid {
+  text-align: right;
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.5);
+  margin-top: 0;
+}
+
+.card__price {
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.card__link {
+  display: block;
+  font-size: 20px;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 10px;
+  padding: 11px 20px;
+  background: linear-gradient(214.02deg, #b75cff 6.04%, #671ae4 92.95%);
+  text-align: center;
+  margin-top: 26px;
+}
+
+.card__link:hover {
+  background: linear-gradient(45deg, #b75cff, 35%, #671ae4 60%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.collapsible {
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  padding: 20px 0px;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #fff;
+  text-align: left;
+  outline: none;
+  font-size: 20px;
+  margin-bottom: 32px;
+}
+
+.active,
+.collapsible:hover {
+  background-color: transparent;
+  color: rgba(255, 255, 255, 1);
+}
+
+.collapsible:after {
+  content: "\002B";
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+  color: rgba(255, 255, 255, 1);
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  line-height: 1.5;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.faq {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 45px;
+}
+
+.faq__item {
+  flex-basis: 48%;
+}
+
+.banner {
+  background: linear-gradient(214.02deg, #b75cff 6.04%, #671ae4 92.95%);
+  border-radius: 10px;
+  padding: 50px 15px;
+  text-align: center;
+  margin-top: 118px;
+  line-height: 1.5;
+  margin-bottom: 100px;
+}
+
+.banner__title {
+  display: block;
+  margin: 0 auto 32px;
+  max-width: 500px;
+  font-weight: 700;
+  font-size: 50px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.banner__link {
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  font-size: 20px;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #ffffff;
+  margin: 0 auto;
+}
